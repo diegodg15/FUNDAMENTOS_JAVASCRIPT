@@ -49,7 +49,7 @@ Variables (var, let, const)
 > **Índice referente a:** Curso Cisco - JavaScript Essentials 2 (JSE) <br>
 > **Objetivo:** Profundizar en conceptos intermedios de JavaScript, aplicando POO, asincronía y manipulación avanzada del DOM. **JSE – Certified Entry-Level JavaScript Programmer**.
 > <p align="center">
->  <a href="https://www.netacad.com/courses/javascript-essentials-1?courseLang=en-US](https://www.netacad.com/courses/javascript-essentials-2?courseLang=en-US)" target="_blank">
+>  <a href="https://www.netacad.com/courses/javascript-essentials-1?courseLang=en-US](https://www.netacad.com/courses/javascript-essentials-2?courseLang=en-US)(https://www.netacad.com/courses/javascript-essentials-2?courseLang=en-US)(https://www.netacad.com/courses/javascript-essentials-2?courseLang=en-US)" target="_blank">
 >   Link curso Cisco Intermedio
 > </a>
 > </p>
