@@ -1,3 +1,4 @@
+
 "use strict";//Define que el código JavaScript debe ejecutarse en "modo estricto", es una expresion literal.
 
 //LITERAL: valor en sí mismo; escribir directamente un valor fijo en el código.
@@ -17,7 +18,7 @@
 //VARIABLE: contenedor para guardar valores/datos. (declaración = asignación/inicialización)
 {
     var texto = "hola";
-    let numero = 12;
+    let numeroDoce = 12;
     const VALOR_PI = 3.14;
 }
 
