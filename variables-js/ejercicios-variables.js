@@ -10,7 +10,7 @@
     let aux = null;
     console.log(`a tiene el varlor de: ${a}, b tiene el valor de ${b}`);
 
-    //reasignación de variables:
+    //reasignación de variables con uso de variable auxiliar:
     aux = a;
     a = b;
     b = aux;

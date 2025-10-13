@@ -10,7 +10,9 @@
  * 6. BIGINT
  * 7. SYMBOL
  */
-//-----------------------------------------------------
+//---------------------------------------------------------------------------------
+/**Los tipos de datos primitivos (atómicos) se almacenan en la memoria ram (Stack) y son muy rápidos de lectura. */
+//---------------------------------------------------------------------------------
 
 // STRING: cadena de caracteres
 
