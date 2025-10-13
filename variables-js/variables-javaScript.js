@@ -57,6 +57,7 @@
     --Nota: recomendable no usar var; let solo si la variable debe cambiary usar const por defecto.--
 */
 
+//SCOPE DE VARIABLES:
 {
     var scopeFunction = "variable var";
     let scopeBlock = "variable let global";//queda como variable global.

@@ -28,7 +28,7 @@
 }
 {
     let variableNull = null;
-    console.log(variableNull);
+    console.log(typeof variableNull);//null
 }
 {
     let variabloNoAsignada;
