@@ -2,6 +2,21 @@
 //EJERCICIOS USO DE VARIABLES
 //---------------------------------------------------------------------------------
 
+//Ejercicio N°2
+/**declarar diferentes tipos de variables (convensiones) */
+{
+    let numero = 1;
+    let numeroUno = 1;//camelCase
+    let $numero = 1;
+    let _numero = 1;
+    let numeroNulo = null;
+
+    const NUMERO_PI = Math.PI;//UPPER_SNAKE_CASE
+
+    let isBoolean = true;
+    let bigInt = 12n;
+}
+
 //Ejercicio N°1
 /**cambiar variables de a --> b */
 {
@@ -23,4 +38,17 @@
         [a, b] = [b, a];
         console.log(`El valor de a es : ${a} y  \nel valor de b es: ${b}`);
     }
+}
+
+
+//Ejercicio N°3
+/** */
+{
+
+}
+
+//Ejercicio N°4
+/** */
+{
+
 }

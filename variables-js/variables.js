@@ -13,6 +13,10 @@
     // /\d{3}/        // cualquier número de 3 dígitos
     //    /^ Hola /        // cadenas que comiencen con "Hola"
     //    /abc/          // busca la secuencia "abc" en un texto
+    //ejemplo:
+    {
+
+    }
 }
 
 //VARIABLE: contenedor para guardar valores/datos. (declaración = asignación/inicialización)
@@ -55,6 +59,12 @@
     - CONST     |->Scope block
 
     --Nota: recomendable no usar var; let solo si la variable debe cambiary usar const por defecto.--
+
+    Reasignación y redeclaración:
+            reasignación: | redeclaración:
+    - VAR       SI              SI 
+    - LET       SI              NO      
+    - CONST     NO              NO
 */
 
 //SCOPE DE VARIABLES:
