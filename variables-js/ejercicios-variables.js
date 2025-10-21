@@ -42,7 +42,7 @@
 
 
 //Ejercicio N°3
-/** */
+/**concatenación de variables */
 {
 
 }

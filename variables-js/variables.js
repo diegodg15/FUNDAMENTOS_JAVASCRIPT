@@ -58,7 +58,7 @@
     - LET       |->Scope block (alcance a nivel de bloque) {}
     - CONST     |->Scope block
 
-    --Nota: recomendable no usar var; let solo si la variable debe cambiary usar const por defecto.--
+    --Nota: es recomendable no usar var; let solo si la variable debe cambiary usar const por defecto.--
 
     Reasignación y redeclaración:
             reasignación: | redeclaración:
@@ -66,23 +66,32 @@
     - LET       SI              NO      
     - CONST     NO              NO
 */
+/* 
+Otras características de las variables: 
+    1.puede almacenar un solo tipo de dato.
+    2.su valor inicial el desconocido (undefined).
+    3.el dato de la variable se almacena en la memoria Ram (stack/ heap).
+ */
 
-//SCOPE DE VARIABLES:
+//---------------------------------------------------------------------------------
+
+//SCOPE (alcance) DE LAS VARIABLES:
 {
     var scopeFunction = "variable var";
     let scopeBlock = "variable let global";//queda como variable global.
-    console.log(scopeBlock);
     {
         console.log(scopeFunction);
         console.log(scopeBlock);
-
+        
         let scopeBlock2 = "variable let local"
         console.log(scopeBlock2);
     }
     console.log(scopeBlock2);//error.
+    console.log(scopeBlock);//variable let global.
 }
 
 //---------------------------------------------------------------------------------
+
 
 
 
