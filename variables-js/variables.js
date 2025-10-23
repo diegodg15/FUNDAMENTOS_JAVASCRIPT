@@ -90,6 +90,10 @@ Otras características de las variables:
     console.log(scopeBlock);//variable let global.
 }
 
+//HOISTING (elevación de las declaraciones según scope de la variable)
+//SHADOWING (sombreado de variables)
+//AUTOBOXING (acceso a métodos de tipo de dato esto debería estar en la sección tipos de datos)
+
 //---------------------------------------------------------------------------------
 
 
