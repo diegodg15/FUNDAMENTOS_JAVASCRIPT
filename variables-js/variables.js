@@ -30,9 +30,9 @@
 //---------------------------------------------------------------------------------
 
 //VARIABLES JAVASCRIPT
-
 /*
     Reglas para declarar variables:
+    comienzo de la variable puede ser con:
     1. letra
     2. $
     3. _
@@ -58,7 +58,7 @@
     - LET       |->Scope block (alcance a nivel de bloque) {}
     - CONST     |->Scope block
 
-    --Nota: es recomendable no usar var; let solo si la variable debe cambiary usar const por defecto.--
+    --Nota: es recomendable no usar var; let solo si la variable debe cambiar; recomendable usar const por defecto.--
 
     Reasignación y redeclaración:
             reasignación: | redeclaración:
@@ -69,8 +69,8 @@
 /* 
 Otras características de las variables: 
     1.puede almacenar un solo tipo de dato.
-    2.su valor inicial el desconocido (undefined).
-    3.el dato de la variable se almacena en la memoria Ram (stack/ heap).
+    2.su valor inicial es desconocido (undefined).
+    3.el dato de la variable se almacena en la memoria Ram (stack o heap).
  */
 
 //---------------------------------------------------------------------------------
@@ -82,7 +82,7 @@ Otras características de las variables:
     {
         console.log(scopeFunction);
         console.log(scopeBlock);
-        
+
         let scopeBlock2 = "variable let local"
         console.log(scopeBlock2);
     }

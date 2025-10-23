@@ -14,9 +14,23 @@
     console.log(sumaIterativa);//55
 }
 {
-    //otra forma = uso de fórmula de la sumatoria.
+    //otra forma: uso de fórmula de la sumatoria.
     const numeroTotal = 10;
     const formulaSumarotia = (numeroTotal * (numeroTotal + 1)) / 2;
     console.log(formulaSumarotia);//55
+}
+
+//Ejercicio N°002: uso de centinela
+{
+    let isCentinela = true;
+    let i = 0;
+
+    while (isCentinela) {
+        i++;
+        if (i >= 10) {
+            isCentinela = false;
+        }
+        console.log(i);
+    }
 }
 

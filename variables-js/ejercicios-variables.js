@@ -2,7 +2,7 @@
 //EJERCICIOS USO DE VARIABLES
 //---------------------------------------------------------------------------------
 
-//Ejercicio N°2
+//Ejercicio N°001: declaración de variables
 /**declarar diferentes tipos de variables (convensiones) */
 {
     let numero = 1;
@@ -17,7 +17,7 @@
     let bigInt = 12n;
 }
 
-//Ejercicio N°1
+//Ejercicio N°002: cambio variable
 /**cambiar variables de a --> b */
 {
     let a = 1;
