@@ -38,6 +38,16 @@
         [a, b] = [b, a];
         console.log(`El valor de a es : ${a} y  \nel valor de b es: ${b}`);
     }
+    //lógica aritmética
+    {
+        let a = 5;
+        let b = 10;
+        a = a + b;
+        b = a - b;
+        a = a - b
+        console.log(`El valor de a ahora es a: ${a} y el de b: ${b} `);
+    }
+
 }
 
 

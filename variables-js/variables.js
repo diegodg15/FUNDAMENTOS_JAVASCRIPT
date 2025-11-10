@@ -1,7 +1,7 @@
 
 "use strict";//Define que el código JavaScript debe ejecutarse en "modo estricto", es una expresion literal.
 
-//LITERAL: valor en sí mismo; escribir directamente un valor fijo en el código.
+//LITERAL/ES: valor en sí mismo; escribir directamente un valor fijo en el código.
 {
     43;
     "hola";
