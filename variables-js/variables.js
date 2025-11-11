@@ -1,23 +1,7 @@
 
-"use strict";//Define que el código JavaScript debe ejecutarse en "modo estricto", es una expresion literal.
-
-//LITERAL/ES: valor en sí mismo; escribir directamente un valor fijo en el código.
-{
-    43;
-    "hola";
-    true;
-}
-
-//EXPRESIÓN REGULAR (regex/RegExp): Una expresión regular es una secuencia de caracteres que forma un patrón de búsqueda .
-{
-    // /\d{3}/        // cualquier número de 3 dígitos
-    //    /^ Hola /        // cadenas que comiencen con "Hola"
-    //    /abc/          // busca la secuencia "abc" en un texto
-    //ejemplo:
-    {
-
-    }
-}
+"use strict";//Define que el código JavaScript debe ejecutarse en "modo estricto", es una expresion literal. En frameworks no es necesario especificarlo.
+//se utiliza en JS VANILLA.
+//---------------------------------------------------------------------------------
 
 //VARIABLE: contenedor para guardar valores/datos. (declaración = asignación/inicialización)
 {
@@ -25,9 +9,6 @@
     let numeroDoce = 12;
     const VALOR_PI = 3.14;
 }
-
-
-//---------------------------------------------------------------------------------
 
 //VARIABLES JAVASCRIPT
 /*
@@ -40,7 +21,7 @@
     Convensiones variables:
     1. camelCase = variables en general.
     2. UPPER_SNAKE_CASE = variables globales y constantes (const).
-    3. PascalCase = clases y constructores.
+    3. PascalCase = clases y constructores.*/
 {
     let colorAuto = "rojo";
     const VALOR_NUMERO_PI = 3.14;
@@ -52,9 +33,9 @@
         }
     }
 }
-
+/*
     Tipos:      Alcance (scope):
-    - VAR       |->Scope function (Alcance a nivel de funcion) function scopeFunction(){}
+    - VAR       |->Scope function (Alcance a nivel de funcion) scopeFunction(){}
     - LET       |->Scope block (alcance a nivel de bloque) {}
     - CONST     |->Scope block
 
@@ -64,9 +45,13 @@
             reasignación: | redeclaración:
     - VAR       SI              SI 
     - LET       SI              NO      
-    - CONST     NO              NO
+    - CONST     NO              NO --es una constante.--
 */
+
+//LEXICAL SCOPE: el scope (alcance) se define por donde escribes la variable, no por donde la ejecutas. -> esto permite: CLOSURES (Una Closure es la combinación de una función con el entorno léxico (el alcance) donde fue declarada.). --Una closure es una función interna que recuerda y tiene acceso a las variables de su función externa (o padre), incluso después de que la función externa ha terminado de ejecutarse.
+// --función anidada que puede acceder a las variables de la función padre (herencia).--
 /* 
+
 Otras características de las variables: 
     1.puede almacenar un solo tipo de dato.
     2.su valor inicial es desconocido (undefined).
@@ -90,15 +75,36 @@ Otras características de las variables:
     console.log(scopeBlock);//variable let global.
 }
 
-//HOISTING (elevación de las declaraciones según scope de la variable)
-//SHADOWING (sombreado de variables)
-//AUTOBOXING (acceso a métodos de tipo de dato esto debería estar en la sección tipos de datos)
-
 //---------------------------------------------------------------------------------
 
+//LITERAL/ES: valor en sí mismo; escribir directamente un valor fijo en el código.
+{
+    43;
+    "hola";
+    true;
+    var texto = "hola";
+    let numeroDoce = 12;
+    const VALOR_PI = 3.14;
+}
 
+//EXPRESIÓN REGULAR (regex/RegExp): Una expresión regular es una secuencia de carácteres que forma un patrón de búsqueda .
+{
+    // /\d{3}/              // cualquier número de 3 dígitos
+    //    /^ Hola /        // cadenas que comiencen con "Hola"
+    //    /abc/           // busca la secuencia "abc" en un texto
+    //ejemplo:
+    {
 
+    }
+}
 
+/**RESUMEN CONCEPTOS VARIABLES */
+//SCOPE: alcance block o function.
+//HOISTING: elevación de las declaraciones según scope de la variable.
+//SHADOWING: sombreado de variables.
+//AUTOBOXING: acceso a métodos de tipo de dato esto debería estar en la sección tipos de datos.
+//TDZ temporal dead zone. -> let y const no se pueden utilizar antes de declarar. 
+//Short-Circuiting: Short-Circuiting es un comportamiento de los operadores lógicos (&& - AND y || - OR) en JavaScript donde el motor del lenguaje evalúa la expresión de izquierda a derecha y deja de evaluar tan pronto como el resultado final de la expresión ya está determinado.
 
 
 
