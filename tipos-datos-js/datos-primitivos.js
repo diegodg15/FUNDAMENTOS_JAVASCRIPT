@@ -66,6 +66,15 @@
     console.log(isDataValid);  //  ->  true
     console.log(typeof isDataValid);  //  ->  boolean
 }
+//FALSY:            |  TRUTHY: todos los que no sean falsy.
+/**                 |  --{}; [] : son truthy por que aunque no contengan nada, representan una funcion o array existente.
+ * Null             |
+ * NaN              |
+ * " "              |
+ * 0; -0; 0n        |
+ * False            |
+ * Undefined        |
+ */
 //---------------------------------------------------------------------------------
 
 //NUMBER: Este es el tipo numérico principal en JavaScript que representa tanto números reales (por ejemplo, fracciones) como enteros. El formato en el que se almacenan los datos de este tipo en la memoria implica que sus valores a veces son aproximados (especialmente, aunque no exclusivamente, valores muy grandes o algunas fracciones). Se asume, entre otras cosas, que para garantizar la exactitud de los cálculos, los valores enteros en JavaScript deben limitarse al rango de [0, 1] a [0, 1].-(253 – 1)a(253 – 1).
