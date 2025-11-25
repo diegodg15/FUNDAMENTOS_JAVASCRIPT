@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="juego de memoria">
+    <link rel="stylesheet" href="./style.css">
+    <title>Memory matrix</title>
+</head>
+
+<body>
+    <div id="confetti-container"></div>
+    <header>
+        <h1>Matriz de memoria</h1>
+        <h2>Iconos de la computadora</h2>
+        <p style="padding-top:15px; font-size: .8em;"></p>
+        <div id="game-board">
+            <div class="card" data-image="img1"><img src="https://vscodeedu.com/cap.png"></div>
+            <div class="card" data-image="img1"><img src="https://vscodeedu.com/cap.png"></div>
+            <div class="card" data-image="img2"><img src="https://vscodeedu.com/chip.png"></div>
+            <div class="card" data-image="img2"><img src="https://vscodeedu.com/chip.png"></div>
+            <div class="card" data-image="img3"><img src="https://vscodeedu.com/gears.png"></div>
+            <div class="card" data-image="img3"><img src="https://vscodeedu.com/gears.png"></div>
+            <div class="card" data-image="img4"><img src="https://vscodeedu.com/keyboard.png"></div>
+            <div class="card" data-image="img4"><img src="https://vscodeedu.com/keyboard.png"></div>
+            <div class="card" data-image="img5"><img src="https://vscodeedu.com/rocket.png"></div>
+            <div class="card" data-image="img5"><img src="https://vscodeedu.com/rocket.png"></div>
+            <div class="card" data-image="img6"><img src="https://vscodeedu.com/satellite.png"></div>
+            <div class="card" data-image="img6"><img src="https://vscodeedu.com/satellite.png"></div>
+            <div class="card" data-image="img7"><img src="https://vscodeedu.com/bug.png"></div>
+            <div class="card" data-image="img7"><img src="https://vscodeedu.com/bug.png"></div>
+            <div class="card" data-image="img8"><img src="https://vscodeedu.com/logic.png"></div>
+            <div class="card" data-image="img8"><img src="https://vscodeedu.com/logic.png"></div>
+        </div>
+
+        <div id="timer" aria-label="Game timer"></div>
+        <div id="match-info" arial-label="Match information"></div>
+    </header>
+
+    <main>
+        <p>En este juego, haz clic en dos cuadrados para encontrar símbolos coincidentes.<br>Intenta encontrar todas las
+            parejas en la cuadrícula. ¡Buena suerte!</p>
+        <div id="congratulations">¡Felicidades! ¡Encontraste todas las parejas!</div>
+        <button id="play-again" style="display: none;">Jugar de nuevo</button>
+    </main>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
