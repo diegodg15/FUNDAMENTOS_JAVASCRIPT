@@ -114,3 +114,4 @@ function showConfetti() {
     document.getElementById('congratulations').style.display = 'block'; // Show the congratulations message
 }
 
+// LINK GUIA PROYECTO: https://vscode.dev/edu?courseId=memory-matrix&workspace-scheme=vscode-edu-workspace&profile=web-dark&vscode-lang=es#account-id=30371286-7dae-40a7-86a7-b7c4ca38f9e9
