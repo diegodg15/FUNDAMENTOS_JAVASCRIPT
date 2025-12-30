@@ -25,9 +25,11 @@
 {
     let colorAuto = "rojo";
     const VALOR_NUMERO_PI = 3.14;
+    let avion = 1, auto = 2, moto = 3;//declaración de múltiples varibles en una línea.
+    let x, y, z; //declaración sin inicializar
 
-    class TrianguloRecto{
-        constructor (alto, ancho){
+    class TrianguloRecto {
+        constructor(alto, ancho) {
             this.alto = alto;
             this.ancho = ancho;
         }
@@ -98,12 +100,21 @@ Otras características de las variables:
     }
 }
 
+//IMPRESIONES POR CONSOLA DE VARIABLES.
+{
+    let color = "rojo";
+    console.log("El color del auto es " + color);
+    console.log(`El color del auto es ${color}`);
+    console.log("El color del auto es", color);
+}
+
+
 /**RESUMEN CONCEPTOS VARIABLES */
 //SCOPE: alcance block o function.
 //HOISTING: elevación de las declaraciones según scope de la variable.
 //SHADOWING: sombreado de variables.
 //AUTOBOXING: acceso a métodos de tipo de dato esto debería estar en la sección tipos de datos.
-//TDZ temporal dead zone. -> let y const no se pueden utilizar antes de declarar. 
+//TDZ temporal dead zone. -> let y const no se pueden utilizar antes de declarar.
 //Short-Circuiting: Short-Circuiting es un comportamiento de los operadores lógicos (&& - AND y || - OR) en JavaScript donde el motor del lenguaje evalúa la expresión de izquierda a derecha y deja de evaluar tan pronto como el resultado final de la expresión ya está determinado.
 
 
