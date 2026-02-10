@@ -87,3 +87,19 @@
     console.log(year);  //  ->  1991;
     console.log(typeof year);  //  ->  number;
 }
+
+
+//Ejemplo uso de symbol:
+const ID_AUTO = Symbol("chl-123")
+{
+    let obj = {};
+
+    obj[Symbol("a")] = "a";
+    obj[Symbol.for("b")] = "b";
+    obj["c"] = "c";
+    obj.d = "d";
+
+    for (let i in obj) {
+        console.log(i); // imprime en registro "c" y "d"
+    }
+}
