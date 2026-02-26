@@ -67,7 +67,7 @@
     console.log(typeof isDataValid);  //  ->  boolean
 }
 //FALSY:            |  TRUTHY: todos los que no sean falsy.
-/**                 |  --{}; [] : son truthy por que aunque no contengan nada, representan una funcion o array existente.
+/**                 |  --{}; [] : son truthy porque aunque no contengan nada, representan una funcion o array existente.
  * Null             |
  * NaN              |
  * " "              |
