@@ -104,7 +104,7 @@ Otras características de las variables:
 {
     let color = "rojo";
     console.log("El color del auto es " + color);
-    console.log(`El color del auto es ${color}`);
+    console.log(`El color del auto es ${color}`);//template literals
     console.log("El color del auto es", color);
 }
 

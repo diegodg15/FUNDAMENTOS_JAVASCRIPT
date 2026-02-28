@@ -53,7 +53,7 @@
 }
 //---------------------------------------------------------------------------------
 
-//BOOLEAN: tipo de dato lógico ->valores: true(verdadero = 1 -> truthy) y false(falso = 0 -> falsy)
+//BOOLEAN: tipo de dato lógico ->valores: true(verdadero = 1 -> truthy) y false(falso = 0 -> falsy). Este tipo de dato, es utilizado con frecuencia como una flag (bandera o centinela), para controlar estructuras de control. 
 // truthy y falsy son valores que pueden ser verdaderos o falsos en un contexto boleano
 {
     let isDataValid = true;
@@ -67,7 +67,7 @@
     console.log(typeof isDataValid);  //  ->  boolean
 }
 //FALSY:            |  TRUTHY: todos los que no sean falsy.
-/**                 |  --{}; [] : son truthy porque aunque no contengan nada, representan una funcion o array existente.
+/**                 |  --{}; [] : aunque no contengan nada, representan una funcion o array existente.
  * Null             |
  * NaN              |
  * " "              |
@@ -77,7 +77,7 @@
  */
 //---------------------------------------------------------------------------------
 
-//NUMBER: Este es el tipo numérico principal en JavaScript que representa tanto números reales (por ejemplo, fracciones) como enteros. El formato en el que se almacenan los datos de este tipo en la memoria implica que sus valores a veces son aproximados (especialmente, aunque no exclusivamente, valores muy grandes o algunas fracciones). Se asume, entre otras cosas, que para garantizar la exactitud de los cálculos, los valores enteros en JavaScript deben limitarse al rango de [0, 1] a [0, 1].-(253 – 1)a(253 – 1).
+//NUMBER: Este es el tipo numérico principal en JavaScript que representa tanto números reales por ejemplo, fracciones como enteros. El formato en el que se almacenan los datos de este tipo en la memoria implica que sus valores a veces son aproximados especialmente, aunque no exclusivamente valores muy grandes o algunas fracciones. Se asume, entre otras cosas, que para garantizar la exactitud de los cálculos, los valores enteros en JavaScript deben limitarse al rango de [0, 1] a [0, 1].-(253 – 1) a (253 – 1).
 {
     const year = 1991;
     let delayInSeconds = 0.00016;
@@ -88,18 +88,65 @@
     console.log(typeof year);  //  ->  number;
 }
 
+//SYMBOL: Es un tipo de dato primitivo único e inmutable introducido en ES6. Cada Symbol creado es único y no puede ser recreado. Los símbolos se utilizan frecuentemente como claves de propiedades en objetos cuando se quiere evitar colisiones de nombres o crear propiedades "privadas" (no enumerables). A diferencia de los strings, los Symbols nunca son iguales, aunque tengan la misma descripción.
 
-//Ejemplo uso de symbol:
-const ID_AUTO = Symbol("chl-123")
+/**CARACTERÍSTICAS DE SYMBOL:
+ * - Cada símbolo es único: Symbol("id") !== Symbol("id")
+ * - No son enumerables en bucles for...in ni Object.keys()
+ * - Se pueden usar como claves de objetos para crear propiedades ocultas
+ * - Symbol.for() crea símbolos globales reutilizables
+ * - typeof symbol devuelve "symbol"
+ * - No se puede usar el operador new con Symbol
+ */
+
+// EJEMPLO 1: Símbolo único para identificador
 {
+    const ID_USUARIO = Symbol("idUsuario");
+    const CONTADOR = Symbol("contador");
+    
+    console.log(typeof ID_USUARIO); // "symbol"
+    console.log(ID_USUARIO.toString()); // Symbol(idUsuario)
+    console.log(Symbol("id") === Symbol("id")); // false - cada uno es único
+}
+
+// EJEMPLO 2: Usar símbols como propiedades de objetos para evitar colisiones
+{
+    const smbUsuario = Symbol("usuario");
+    const smbPassword = Symbol("password");
+    
+    let usuario = {
+        nombre: "Juan",
+        [smbUsuario]: "juan@email.com",
+        [smbPassword]: "secreto123"
+    };
+    
+    console.log(usuario.nombre); // "Juan"
+    console.log(usuario[smbUsuario]); // "juan@email.com"
+    console.log(Object.keys(usuario)); // ["nombre"] - los symbols NO aparecen
+}
+
+// EJEMPLO 3: Symbol.for() - Símbolos globales reutilizables
+{
+    const id1 = Symbol.for("app.id"); // Crea o recupera un símbolo global
+    const id2 = Symbol.for("app.id"); // Recupera el mismo símbolo
+    
+    console.log(id1 === id2); // true - mismo símbolo global
+    console.log(Symbol.keyFor(id1)); // "app.id" - obtiene la clave
+}
+
+// EJEMPLO 4: Propiedades privadas con Symbol
+{
+    const ID_AUTO = Symbol("chl-123");
+    
     let obj = {};
-
-    obj[Symbol("a")] = "a";
-    obj[Symbol.for("b")] = "b";
-    obj["c"] = "c";
-    obj.d = "d";
-
+    obj[Symbol("a")] = "a"; // no enumerable
+    obj[Symbol.for("b")] = "b"; // no enumerable
+    obj["c"] = "c"; // enumerable
+    obj.d = "d"; // enumerable
+    
     for (let i in obj) {
-        console.log(i); // imprime en registro "c" y "d"
+        console.log(i); // imprime solo "c" y "d" - los symbols se ignoran
     }
+    
+    console.log(Object.getOwnPropertySymbols(obj)); // acceder a las propiedades symbol
 }
