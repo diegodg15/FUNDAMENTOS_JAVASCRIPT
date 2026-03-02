@@ -6,6 +6,6 @@
  * 3.ARRAY
 */
 //---------------------------------------------------------------------------------
-//Los tipos de datos complejos se almacenan en la memoria dinámica (heap). Al ser “derivados”, la variable guarda una referencia (dirección) al dato en memoria, no el dato en sí.
+//Los tipos de datos complejos se almacenan en la memoria dinámica heap. Al ser “derivados”, la variable guarda una referencia o dirección al dato en la memoria, no el dato en sí.
 
 

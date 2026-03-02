@@ -17,6 +17,10 @@
     1. letra
     2. $
     3. _
+    ej/
+    let numero = 12;
+    let $numero = 12;
+    let _numero = 12;
 
     Convensiones variables:
     1. camelCase = variables en general.
@@ -79,7 +83,7 @@ Otras características de las variables:
 
 //---------------------------------------------------------------------------------
 
-//LITERAL/ES: valor en sí mismo; escribir directamente un valor fijo en el código.
+//LITERALES: valor en sí mismo; escribir directamente un valor fijo en el código.
 {
     43;
     "hola";
@@ -111,9 +115,13 @@ Otras características de las variables:
 
 /**RESUMEN CONCEPTOS VARIABLES */
 //SCOPE: alcance block o function.
+
 //HOISTING: elevación de las declaraciones según scope de la variable.
+
 //SHADOWING: sombreado de variables.
+
 //AUTOBOXING: acceso a métodos de tipo de dato esto debería estar en la sección tipos de datos.
+
 //TDZ temporal dead zone. -> let y const no se pueden utilizar antes de declarar.
 //Short-Circuiting: Short-Circuiting es un comportamiento de los operadores lógicos (&& - AND y || - OR) en JavaScript donde el motor del lenguaje evalúa la expresión de izquierda a derecha y deja de evaluar tan pronto como el resultado final de la expresión ya esté determinada.
 
