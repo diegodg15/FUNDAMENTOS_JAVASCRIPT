@@ -40,7 +40,7 @@
 }
 {
     let numeroGrnadeBigInt = 12n;
-    console.log(typeof numeroGrnadeBigInt);
+    console.log(typeof numeroGrnadeBigInt);//bigInt
 }
 {
     let id = Symbol("identificador");

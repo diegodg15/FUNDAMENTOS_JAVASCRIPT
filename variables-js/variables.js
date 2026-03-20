@@ -125,7 +125,15 @@ Otras características de las variables:
 //TDZ temporal dead zone. -> let y const no se pueden utilizar antes de declarar.
 //Short-Circuiting: Short-Circuiting es un comportamiento de los operadores lógicos (&& - AND y || - OR) en JavaScript donde el motor del lenguaje evalúa la expresión de izquierda a derecha y deja de evaluar tan pronto como el resultado final de la expresión ya esté determinada.
 
+//INDENTACIÓn o sangrado de código: agregar espacios (o tabulaciones) al inicio de las líneas para mostrar la estructura jerárquica del código.
 
+/*
+Prettier:
+Sí, Prettier es la herramienta estándar en JavaScript/TypeScript para formatear código automáticamente. No es una extensión en el sentido de ser opcional: es un formateador de código (code formatter).
+*/
+
+// ESLint (detecta errores y estilo).
+// Eslint + Prettier (juntos: ESLint corrige lógica, Prettier formatea).
 
 
 
