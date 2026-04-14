@@ -95,3 +95,5 @@ console.log("Ejemplo 15 - match():", cadena15.match(regex15)); // ['123-456-7890
 
 // Nota: Estos son ejemplos básicos. Las expresiones regulares pueden ser muy complejas.
 // Para probar estos ejemplos, ejecuta este archivo con Node.js o en la consola del navegador.
+
+
